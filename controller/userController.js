@@ -41,6 +41,7 @@ const login = async (req, res) => {
                 "success": true,
                 "message": "OTP send successfully",
                 "phone": phone,
+                "otp":otp,
                 "hash": `${hash}.${expire}`
 
             })
@@ -88,6 +89,7 @@ const register = async (req, res) => {
                 "success": true,
                 "message": "OTP send successfully",
                 "phone": phone,
+                "otp":otp,
                 "hash": `${hash}.${expire}`
 
             })
