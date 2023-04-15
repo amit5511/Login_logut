@@ -7,11 +7,7 @@ Hash_SECRET
 access_token_secret
 db_URL
 
-//OTP SEND BY EMAIL
-SMPT_PASSWORD
-SMPT_MAIL
-SMPT_SERVICE="gmail"
-SMPT_HOST=smpt.gmail.com
+
 
 //OTP SEND SMS twilio
 SMS_SID
