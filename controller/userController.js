@@ -131,7 +131,7 @@ const verify_otp = async (req, res) => {
                     //console.log(user)
                     const { accessToken } = tokenService.generateToken({ _id: user._id });
                        res.cookie('accessToken', accessToken, {
-                        maxAge:1000*60*60*24*30,
+                        maxAge:1000*60*60*24*30*12,
                         httpOnly: true,
                         sameSite: process.env.dev === "development" ? true : "none",
                        secure: process.env.dev === "development" ? false : true,
